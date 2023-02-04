@@ -39,7 +39,7 @@ Example:
 
 ```
 {
-	"lsp.server": "python=pyls,go=gopls,typescript=deno lsp,rust=rls",
+	"lsp.server": "python=pylsp,go=gopls,typescript=deno lsp,rust=rls",
 	"lsp.formatOnSave": true,
 	"lsp.ignoreMessages": "LS message1 to ignore|LS message 2 to ignore|...",
 	"lsp.tabcompletion": true,
@@ -60,7 +60,7 @@ information. If set, it will override the `lsp.server` from the `settings.json`.
 You can add a line such as the following to your shell profile (e.g. .bashrc):
 
 ```
-export MICRO_LSP='python=pyls,go=gopls,typescript=deno lsp={"importMap":"import_map.json"},rust=rls'
+export MICRO_LSP='python=pylsp,go=gopls,typescript=deno lsp={"importMap":"import_map.json"},rust=rls'
 ```
 
 If neither the MICRO_LSP nor the lsp.server is set, then the plugin falls back
@@ -82,7 +82,7 @@ This plugin has been tested briefly with the following language servers:
 - go: [gopls](https://pkg.go.dev/golang.org/x/tools/gopls#section-readme)
 - markdown, JSON, typescript, javascript (including JSX/TSX):
   [deno](https://deno.land/)
-- python: pyls, [pylsp](https://github.com/python-lsp/python-lsp-server)
+- python: pylsp, [pylsp](https://github.com/python-lsp/python-lsp-server)
 - rust: [rls](https://github.com/rust-lang/rls)
 - lua: [lua-lsp](https://github.com/Alloyed/lua-lsp)
 - zig: [zls](https://github.com/zigtools/zls)
